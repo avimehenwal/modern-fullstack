@@ -16,7 +16,7 @@
     "start:prod": "node dist/main",
     "docker": "docker run --rm -p 3000:3000 nest-cloud-run",
     "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
-    "test": "jest",
+    "test": "parallel ::: 'curl -s localhost:3000' 'curl -s localhost:3001'",
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",

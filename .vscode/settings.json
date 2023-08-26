@@ -1,5 +1,6 @@
 {
   "conventionalCommits.scopes": [
-    "ws"
+    "ws",
+    "k8s"
   ]
 }

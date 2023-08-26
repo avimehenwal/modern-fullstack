@@ -18,7 +18,6 @@
   },
   "homepage": "https://github.com/avimehenwal/modern-fullstack#readme",
   "workspaces": [
-    "exp/a",
     "exp/jaeger",
     "exp/nestjs-sample"
   ]

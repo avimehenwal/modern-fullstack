@@ -1,7 +1,32 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: avi-nestjs
+  labels:
+    name: avi-nestjs
+
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nestjs
+  labels:
+    run: nestjs
+  namespace: avi-nestjs
+spec:
+  containers:
+    - name: nest-cloud-run
+      image: nest-cloud-run:latest
+      imagePullPolicy: Never
+      ports:
+        - containerPort: 3000
+
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nestjs-hello-world-deployment
+  namespace: avi-nestjs
   labels:
     app: nestjs
 spec:
@@ -26,6 +51,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: nestjs-hello-world-service
+  namespace: avi-nestjs
 spec:
   selector:
     app: nestjs

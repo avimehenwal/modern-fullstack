@@ -1,8 +1,9 @@
 {
-  "name": "modern-fullstack",
+  "name": "jaeger",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,10 +17,5 @@
   "bugs": {
     "url": "https://github.com/avimehenwal/modern-fullstack/issues"
   },
-  "homepage": "https://github.com/avimehenwal/modern-fullstack#readme",
-  "workspaces": [
-    "exp/a",
-    "exp/jaeger",
-    "exp/nestjs-sample"
-  ]
+  "homepage": "https://github.com/avimehenwal/modern-fullstack#readme"
 }

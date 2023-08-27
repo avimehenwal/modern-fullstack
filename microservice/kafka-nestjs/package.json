@@ -5,6 +5,8 @@
   "main": "index.js",
   "devDependencies": {},
   "scripts": {
+    "start": "docker compose --file docker-compose-kafka.yaml up --detach",
+    "stop": "docker compose --file docker-compose-kafka.yaml down",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

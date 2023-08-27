@@ -1,10 +1,10 @@
 {
-  "name": "modern-fullstack",
+  "name": "helm-chart",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "devDependencies": {},
   "scripts": {
-    "nestjs-sample": "npm run start:dev -w exp/nestjs-sample",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,13 +17,5 @@
   "bugs": {
     "url": "https://github.com/avimehenwal/modern-fullstack/issues"
   },
-  "homepage": "https://github.com/avimehenwal/modern-fullstack#readme",
-  "workspaces": [
-    "exp/jaeger",
-    "exp/nestjs-sample",
-    "exp/sample-backend",
-    "exp/analytics-api",
-    "exp/communication-api",
-    "devops/helm-chart"
-  ]
+  "homepage": "https://github.com/avimehenwal/modern-fullstack#readme"
 }

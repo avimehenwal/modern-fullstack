@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: nestjs-deployment
+  name: nestjs-deployment
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: nestjs-deployment
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: nestjs-deployment
+    spec:
+      containers:
+        - image: nest-cloud-run
+          name: nest-cloud-run
+          ports:
+            - containerPort: 3000
+          resources: {}
+status: {}

@@ -30,6 +30,7 @@
     "microservice/kafka-nestjs",
     "microservice/api-gateway",
     "microservice/billing-api",
-    "microservice/auth-api"
+    "microservice/auth-api",
+    "rpc/nestjs-grpc"
   ]
 }

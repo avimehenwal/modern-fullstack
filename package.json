@@ -31,6 +31,6 @@
     "microservice/api-gateway",
     "microservice/billing-api",
     "microservice/auth-api",
-    "rpc/nestjs-grpc"
+    "rpc/api-gateway"
   ]
 }

@@ -24,6 +24,10 @@
     "exp/sample-backend",
     "exp/analytics-api",
     "exp/communication-api",
-    "devops/helm-chart"
+    "devops/helm-chart",
+    "microservice/kafka-nestjs",
+    "microservice/api-gateway",
+    "microservice/billing-api",
+    "microservice/auth-api"
   ]
 }
